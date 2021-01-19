@@ -1,0 +1,470 @@
+html {
+  box-sizing: border-box;
+}
+
+/* *,
+* ::before,
+* ::after {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: inherit;
+} */
+
+:root {
+  --title-font: 'Roboto', sans-serif;
+  --text-font: 'Roboto', sans-serif;
+  --accent-color: rgb(33, 150, 243);
+}
+
+body {
+  font-family: var(--text-font);
+  color: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+.logotype-svg {
+  width: 145px;
+  height: 31px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* ===================== COMPONENTS ===================== */
+
+/*
+ * Свойства нужно применить ко всем изображениям,
+ * поэтому используется селектор тега.
+ */
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===================== END COMPONENTS ===================== */
+
+/* ===================== HEADER ===================== */
+
+.header {
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logotype-link {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  margin-right: 93px;
+}
+
+.logotype-accent {
+  color: black;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.143;
+  display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 53px;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+  color: rgb(33, 150, 243);
+}
+
+.contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  display: flex;
+}
+
+.contacts-list-item:not(:last-child) {
+  margin-right: 51px;
+  margin-left: auto;
+}
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: #2196f3;
+}
+
+/* ===================== END HEADER ===================== */
+
+/* ===================== HERO ===================== */
+
+.hero {
+  background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url(/images/hero/Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-main-page {
+  max-width: 696px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 45px;
+}
+
+.hero-button-background {
+  min-width: 200px;
+  height: 50px;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* ===================== END HERO ===================== */
+
+/* =====================  ADVANTAGES ===================== */
+
+.advantages {
+  padding-top: 94px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.advantages-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.advantages-list-item::before {
+  display: block;
+  weight: 270px;
+  height: 120px;
+  outline: 1px solid #212121;
+  background-image: url (./images/icons/for-sprite/Vector.svg);
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.advantages-list-name {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.advantages-list-name:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantages-list:not(:last-child) {
+  padding-right: 30px;
+}
+
+.advantages-item-description {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* ===================== END ADVANTAGES ===================== */
+
+/* ===================== WHAT WE ARE DOING ===================== */
+
+.what-are-we-doing-list {
+  display: flex;
+}
+
+.what-are-we-doing-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-are-we-doing-title {
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* ===================== END WHAT WE ARE DOING ===================== */
+
+/* ===================== OUR TEAM ===================== */
+
+.our-team {
+  background-color: #f5f4fa;
+}
+.our-team-title {
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+
+.our-team-list {
+  display: flex;
+  margin: -15px;
+}
+
+.our-team-list-item {
+  margin: 15px;
+}
+
+/* .our-team-list-img {
+  margin-bottom: 30px;
+} */
+
+.our-team-list-name {
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.our-team-list-description {
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.social-list-link:hover {
+  background-color: #2196f3;
+}
+
+/* .social-list-link:hover .social-list-icon {
+  background-color: #2196f3;
+} */
+
+.social-list-icon:hover {
+  fill: white;
+}
+
+.social-list-item {
+  width: 20px;
+  height: 20px;
+}
+
+.our-team-content-wrapper {
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* ===================== END OUR TEAM ===================== */
+
+/* ===================== FOOTER ===================== */
+
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer-accent {
+  color: #ffffff;
+}
+.footer-address-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-address-list {
+  margin-top: 20px;
+}
+
+.footer-address {
+  text-decoration: none;
+}
+
+.footer-contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* =====================END FOOTER ===================== */
+
+/* ===================== PORTFOLIO ===================== */
+
+.hero-button-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-list {
+  display: flex;
+  margin: -15px;
+  flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+  margin: 14px;
+  border: 1px solid rgba(236, 236, 236, 1);
+}
+
+.portfolio-list-img {
+  margin-bottom: 30px;
+}
+
+.portfolio-list-container {
+  padding: 0px 24px 20px 24px;
+}
+
+.portfolio-list-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.portfolio-item-description {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.hero-button-portfolio .link {
+  /* min-width: 128px;
+  height: 38px; */
+  background: #f5f4fa;
+  /* background: #2196f3; */
+  border-radius: 4px;
+  font-family: Roboto;
+  cursor: pointer;
+  margin-right: 8px;
+  border: none;
+  padding: 6px 20px;
+  line-height: 1.62;
+}
+
+.hero-button-portfolio .link:hover,
+.hero-button-portfolio .link:focus {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
