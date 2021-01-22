@@ -359,11 +359,13 @@ img {
   border-radius: 50%;
 }
 
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: #2196f3;
 }
 
-.social-list-link:hover .social-list-icon {
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
   fill: white;
 }
 
@@ -433,12 +435,13 @@ img {
   color: rgba(175, 177, 184, 1);
 }
 
-.regular-customers-list-link.link:hover,
-.regular-customers-icon:hover {
-  fill: #2196f3;
+.regular-customers-list-link:hover,
+.regular-customers-list-link:focus {
+  border-color: #2196f3;
 }
 
-.regular-customers-icon:hover {
+.regular-customers-list-link:hover .regular-customers-icon,
+.regular-customers-list-link:focus .regular-customers-icon {
   fill: #2196f3;
 }
 
